@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src= "./matter-js-0.14.2/build/matter.js" type="text/javascript"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhysSim</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="./poly-decomp.js-master/build/decomp.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="Interface.css">
+    <!-- <script src='PlotTest.js'></script> -->
+  </head>
+  
+  <body>
+    <!-- <h6 align="center">Welcome to the physics engine</h6> -->
+    <!-- <div id="graph" style="width:1000px;height:300px;" ></div> -->
+    <div id="problem">
+      <script src='FrictionSim.js' type="text/javascript"></script>
+    </div>
+    <div>
+        <label for="mass1">Mass 1</label>
+        <input id = "mass1" placeholder="M1" onchange="defMass1(this.value)">
+        <div id="action">
+            <button type="submit" onclick = "submitted()">START</button>
+            <button onclick="document.location.reload(true)">Reset Scene</button>
+        </div>
+    </div>
+  </body>
+</html>
+  
